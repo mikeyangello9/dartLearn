@@ -24,7 +24,10 @@ void main (){
 
   for(int i = 0; i < email.length; i++){
     print('student: ${email[i]} \nStudents order: ${'🍔' * int.parse(email[6])}');
+
   }
+
+  print(email.substring(2, 8));
   
 }
 double circumferenceOfCircle(double radius){
