@@ -28,6 +28,13 @@ void main (){
   }
 
   print(email.substring(2, 8));
+
+
+  String openText = 'Hello world';
+
+  for(int j = 0; j <  openText.length; j++) {
+    print(openText[j%2].toUpperCase());
+  }
   
 }
 double circumferenceOfCircle(double radius){
