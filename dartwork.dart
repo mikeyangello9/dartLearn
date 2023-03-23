@@ -6,7 +6,9 @@ void main(){
 
   print(formalName('Michael', 'Aiwekhoe'));
 
-  print(nameToNumber("abc"));
+  print(gradeTest(5));
+
+  print(nameToNumber("sam"));
 
 } 
 
@@ -18,13 +20,10 @@ String formalName(String firstName, String lastName){
   return "${firstName[0]}.$lastName";
 }
 
-// String gradeTest(int mark){
-//   String gradeLetter = "ABCF";
-//   for(int i = 0; i < gradeLetter.length; i++){
-//     print(gradeLetter[mark]);
-//   }
-//   return mark = 
-// }
+String gradeTest(int mark){
+  String gradeLetter = "FFFFCCBBAAA";
+  return gradeLetter[mark];
+}
 
 int nameToNumber(String name){
   String alphabets = "abcdefghijklmnopqrstuvwxyz";
