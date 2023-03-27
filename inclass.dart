@@ -12,18 +12,32 @@ void main(){
   }
   print(count);
 
-  print(fibonacci(1, 2, 10));
+  print(fibonacci(10));
  
 
 
 }
 
-int fibonacci(int firstTerm, int secondTerm, int nthTimes){
+int fibonacci(int nthTerms){
+  int firstTerm = 0;
+  int secondTerm = 1;
   int count = 0;
-  for(int i = 0; i < nthTimes; i++){
-    count = firstTerm + secondTerm;
+
+  if(nthTerms <= 2){
+    print(firstTerm);
+    print(secondTerm);
+  }
+  else{
+    for(int i = 0; i < nthTerms; i++){
+      int thirdTerm = firstTerm + secondTerm;
+      firstTerm = secondTerm;
+      secondTerm = thirdTerm;
+      count = thirdTerm;
+      print(count);
+    }
   }
   return count;
+
 }
 
 
