@@ -31,5 +31,5 @@ int nameToNumber(String name){
   for(int i = 0; i < name.length; i++){
     count += (1 + alphabets.indexOf(name[i]).toInt());
   }
-  return count; // so indexing from zero is overwritten
+  return count;
 }
