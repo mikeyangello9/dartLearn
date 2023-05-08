@@ -22,6 +22,7 @@ int fibonacci(int nthTerms){
   int firstTerm = 0;
   int secondTerm = 1;
   int count = 0;
+  int evenCount = 0;
 
   if(nthTerms <= 2){
     print(firstTerm);
@@ -33,11 +34,16 @@ int fibonacci(int nthTerms){
       firstTerm = secondTerm;
       secondTerm = thirdTerm;
       count = thirdTerm;
-      print(count);
+
+    if(thirdTerm % 2 == 0){
+      evenCount += thirdTerm;
+    }
+    print(evenCount);
     }
   }
   return count;
 
 }
+
 
 
